@@ -17,7 +17,8 @@ const geistMono = Geist_Mono({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        <Navbar />
+        {children}
         {children}
         <Footer />
       </body>
