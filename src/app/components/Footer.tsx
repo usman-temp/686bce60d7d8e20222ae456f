@@ -15,7 +15,13 @@ export default function Footer() {
   return (
     <footer className="bg-neutral-100 dark:bg-neutral-900 border-t border-neutral-200 dark:border-neutral-800">
       <div className="container mx-auto px-4 py-12">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+              <motion.button
+                onClick={toggleTheme}
+                whileTap={{ scale: 0.95 }}
+                whileHover={{ scale: 1.05 }}
+                className="p-2 rounded-full hover:bg-neutral-200 dark:hover:bg-neutral-700 transition-colors"
+                aria-label="Toggle theme"
+              >
           <div className="space-y-4">
             <h3 className="text-lg font-sans font-semibold text-neutral-800 dark:text-neutral-200">
               Fresh Recipes Daily
