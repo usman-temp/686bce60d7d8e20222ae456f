@@ -50,9 +50,14 @@ export default function Navbar() {
               aria-expanded={isOpen}
             >
               <svg
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden"
+          >
                 stroke="currentColor"
               >
                 {isOpen ? (
