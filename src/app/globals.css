@@ -16,7 +16,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  font-family: var(--font-sans), sans-serif;
     --background: #0a0a0a;
     --foreground: #ededed;
   }
