@@ -5,7 +5,12 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-orange-50 to-orange-100 dark:from-neutral-900 dark:to-neutral-800">
       <div className="container mx-auto px-4 text-center">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 font-sans">
+      <motion.h1
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        className="text-5xl md:text-7xl font-bold mb-6 font-sans"
+      >
           Master the Art of
           <span className="bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent">
             Modern Cooking
